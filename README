@@ -1,0 +1,39 @@
+Richard Farr (farr.rb@gatech.edu)
+CS 3251, Section B
+9/21/2014
+
+----Project 1----
+
+remotecalc-server-tcp.py - TCP Server
+remotecalc-tcp.py        - TCP Client
+
+remotecalc-server-udp.py - UDP Server
+remotecalc-udp.py        - UDP Client
+
+RemoteCalcTCP.java       - Extra Java TCP Client
+RemoteCalcTCP.class      - Compiled Java TCP Client
+
+RemoteCalcUDP.java       - Extra Java UDP Client
+RemoteCalcUDP.class      - Compiled Java UDP Client
+
+
+There is no need to compile anything other than the .java files:
+--> javac RemoteCalcTCP.java
+--> javac RemoteCalcUDP.java
+
+To run the TCP server and client:
+./remotecalc-server-tcp.py [PORT #]
+./remotecalc-tcp.py [IP:PORT] [add/multiply] [val1] [val2]
+
+To run the UDP server and client:
+./remotecalc-server-udp.py [PORT #]
+./remotecalc-udp.py [IP:PORT] [add/multiply] [val1] [val2]
+
+To run the additional Java TCP client:
+./remotecalc-server-tcp.py [PORT #]
+java RemoteCalcTCP [IP:PORT] [add/multiply] [val1] [val2]
+
+To run the additional Java UDP client:
+./remotecalc-server-udp.py [PORT #]
+java RemoteCalcUDP [IP:PORT] [add/multiply] [val1] [val2]
+
